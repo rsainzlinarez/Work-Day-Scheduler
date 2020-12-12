@@ -12,12 +12,15 @@ renderTimeRows();
 function renderTimeRows(){
     
 // const currentHour = moment().hour();
-for (let i = 9; i < 17; i++) {
+
+const hoursArr$ = ['9:00 am', '10:00 am', '11:00 am', '12:00 am', '1:00 pm', '2:00 pm', '3:00 pm', '4:00 pm','5:00 pm', '6:00 pm']
+$.each(hoursArr$, function(index, value){
     
 const div$ = $('<div>').addClass('time-block row');
 const textArea$ = $('<textarea>').addClass('textarea');
 const button$ = $('<button>').addClass('saveBtn').text('Save notes');
-const hour$ = $('<div>').addClass('hour');
+const hour$ = $('<div>').addClass('hour').text(value);
+
 console.log(hour$);
 div$.append(hour$, textArea$, button$);
 $('.container').append(div$);
@@ -30,7 +33,7 @@ $('.container').append(div$);
 // const button$ = $('<button>').adddClass('saveBtn').text('Save Notes').attr('data-time-slot', i);
 
 
-}
+})
 }
 
 
