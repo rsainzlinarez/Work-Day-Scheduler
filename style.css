@@ -5,12 +5,14 @@ body {
 }
 
 .textarea{
-  background: transparent;
+  background-color: blue;
+  background: blue;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  width: 400px;
 }
 
 .jumbotron {
@@ -58,11 +60,13 @@ body {
 }
 
 .saveBtn {
+  background-color: red;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  width: 80px;
 }
 
 .saveBtn i:hover {
