@@ -16,10 +16,18 @@ for (let i = 9; i < 17; i++) {
     
 const div$ = $('<div>').addClass('time-block row');
 const textArea$ = $('<textarea>').addClass('textarea');
-const button$ = $('<button>').addClass('saveBtn');
-
-div$.append(textArea$, button$);
+const button$ = $('<button>').addClass('saveBtn').text('Save notes');
+const hour$ = $('<div>').addClass('hour');
+console.log(hour$);
+div$.append(hour$, textArea$, button$);
 $('.container').append(div$);
+
+// console.log(currentHour);
+
+// if (currentHour > i){
+//     textArea$.addClass('present');
+// }
+// const button$ = $('<button>').adddClass('saveBtn').text('Save Notes').attr('data-time-slot', i);
 
 
 }
