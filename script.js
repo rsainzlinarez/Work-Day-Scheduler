@@ -75,4 +75,8 @@ const button$ = $('<button>').addClass('saveBtn').text('Save Notes');
 div$.append(textArea$, button$);
 $('.container').append(div$);
 
+const key = 'Note:' +0;
+const localStorageRetrive$ = localStorage.getItem(key);
+textArea$.val(localStorageRetrive$);
+
 }
